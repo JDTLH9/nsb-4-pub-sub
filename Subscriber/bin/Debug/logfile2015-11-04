@@ -1,0 +1,52 @@
+2015-11-04 09:13:58,834 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.08 s
+2015-11-04 09:13:58,913 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2015-11-04 09:13:58,956 [1] WARN  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for NServiceBus v4.3 has expired. Falling back to run in Basic1 license mode.
+2015-11-04 09:13:58,960 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.INeedInitialization completed in 0.05 s
+2015-11-04 09:13:59,589 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 0.63 s
+2015-11-04 09:14:13,538 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfiguration completed in 0.09 s
+2015-11-04 09:14:15,447 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.INeedInitialization completed in 0.00 s
+2015-11-04 09:14:15,509 [1] WARN  NServiceBus.Licensing.LicenseManager [(null)] <(null)> - Trial for NServiceBus v4.3 has expired. Falling back to run in Basic1 license mode.
+2015-11-04 09:14:15,509 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.INeedInitialization completed in 0.06 s
+2015-11-04 09:14:15,556 [1] INFO  NServiceBus.Unicast.Subscriptions.MessageDrivenSubscriptions.EnableMessageDrivenPublisherIfStorageIsFound [(null)] <(null)> - ISubscriptionStorage found in the container. The message driven publisher feature will be activeated
+2015-11-04 09:14:16,057 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.IWantToRunBeforeConfigurationIsFinalized completed in 0.53 s
+2015-11-04 09:14:16,088 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.Timeout.Core.IPersistTimeouts was found in the container and will be used instead of the default
+2015-11-04 09:14:16,088 [1] INFO  NServiceBus.Features.Sagas [(null)] <(null)> - The saga feature was enabled but no saga implementations could be found. No need to enable the configured saga persister
+2015-11-04 09:14:16,104 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.Unicast.Subscriptions.MessageDrivenSubscriptions.ISubscriptionStorage was found in the container and will be used instead of the default
+2015-11-04 09:14:16,104 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Features: 
+Audit - Enabled
+AutoSubscribe - Enabled
+BinarySerialization - Controlled by category Serializers
+BsonSerialization - Controlled by category Serializers
+JsonSerialization - Controlled by category Serializers
+XmlSerialization - Controlled by category Serializers
+MsmqTransport - Enabled
+Gateway - Disabled
+TimeoutManager - Enabled
+Sagas - Enabled
+SecondLevelRetries - Enabled
+StorageDrivenPublisher - Enabled
+MessageDrivenSubscriptions - Enabled
+
+2015-11-04 09:14:16,104 [1] INFO  NServiceBus.Features.FeatureInitializer [(null)] <(null)> - Feature categories: 
+   - Serializers
+       * BinarySerialization - Disabled
+       * BsonSerialization - Disabled
+       * JsonSerialization - Enabled
+       * XmlSerialization - Disabled
+
+2015-11-04 09:14:16,119 [1] INFO  NServiceBus.Unicast.Config.FinalizeUnicastBusConfiguration [(null)] <(null)> - Number of messages found: 2
+2015-11-04 09:14:16,135 [1] INFO  NServiceBus.Config.InfrastructureServices [(null)] <(null)> - Infrastructure service NServiceBus.AutomaticSubscriptions.IAutoSubscriptionStrategy was found in the container and will be used instead of the default
+2015-11-04 09:14:16,135 [1] INFO  NServiceBus.Configure [(null)] <(null)> - Invocation of NServiceBus.Config.IFinalizeConfiguration completed in 0.07 s
+2015-11-04 09:14:16,683 [1] INFO  NServiceBus.Installation.PerformanceMonitorUsersInstaller [(null)] <(null)> - Did not attempt to add user 'ADASTRA\bassj' to group 'Performance Monitor Users' since process is not running with elevate privileges. Processing will continue. To manually perform this action run the following command from an admin console:
+net localgroup "Performance Monitor Users" "ADASTRA\bassj" /add
+2015-11-04 09:14:20,672 [1] INFO  NServiceBus.Unicast.Transport.Monitoring.ReceivePerformanceDiagnostics [(null)] <(null)> - NServiceBus performance counter for # of msgs successfully processed / sec is not set up correctly, no statistics will be emitted for the Subscriber queue. Execute the Install-NServiceBusPerformanceCounters cmdlet to create the counter.
+2015-11-04 09:14:20,703 [1] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Transport: Subscriber@LAPTOP-BASSJ started with its throughput limited to 1 msg/sec
+2015-11-04 09:14:20,750 [1] INFO  NServiceBus.Unicast.Transport.Monitoring.ReceivePerformanceDiagnostics [(null)] <(null)> - NServiceBus performance counter for # of msgs successfully processed / sec is not set up correctly, no statistics will be emitted for the Subscriber.Retries queue. Execute the Install-NServiceBusPerformanceCounters cmdlet to create the counter.
+2015-11-04 09:14:20,750 [9] INFO  NServiceBus.Unicast.Transport.Monitoring.ReceivePerformanceDiagnostics [(null)] <(null)> - NServiceBus performance counter for # of msgs successfully processed / sec is not set up correctly, no statistics will be emitted for the Subscriber.TimeoutsDispatcher queue. Execute the Install-NServiceBusPerformanceCounters cmdlet to create the counter.
+2015-11-04 09:14:20,750 [10] INFO  NServiceBus.Unicast.Transport.Monitoring.ReceivePerformanceDiagnostics [(null)] <(null)> - NServiceBus performance counter for # of msgs successfully processed / sec is not set up correctly, no statistics will be emitted for the Subscriber.Timeouts queue. Execute the Install-NServiceBusPerformanceCounters cmdlet to create the counter.
+2015-11-04 09:14:20,766 [1] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Transport: Subscriber.Retries@LAPTOP-BASSJ started with its throughput limited to 1 msg/sec
+2015-11-04 09:14:20,766 [1] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 1/3 'NServiceBus.SecondLevelRetries.SecondLevelRetriesProcessor, NServiceBus.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c' satellite
+2015-11-04 09:14:20,766 [9] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Transport: Subscriber.TimeoutsDispatcher@LAPTOP-BASSJ started with its throughput limited to 1 msg/sec
+2015-11-04 09:14:20,766 [10] INFO  NServiceBus.Unicast.Transport.TransportReceiver [(null)] <(null)> - Transport: Subscriber.Timeouts@LAPTOP-BASSJ started with its throughput limited to 1 msg/sec
+2015-11-04 09:14:20,766 [10] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 3/3 'NServiceBus.Timeout.Hosting.Windows.TimeoutMessageProcessor, NServiceBus.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c' satellite
+2015-11-04 09:14:20,766 [9] INFO  NServiceBus.Satellites.SatelliteLauncher [(null)] <(null)> - Started 2/3 'NServiceBus.Timeout.Hosting.Windows.TimeoutDispatcherProcessor, NServiceBus.Core, Version=4.3.0.0, Culture=neutral, PublicKeyToken=9fc386479f8a226c' satellite
